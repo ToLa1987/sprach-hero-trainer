@@ -1,0 +1,47 @@
+:root {
+  --primary: #0057ff;
+  --primary-dark: #003bb3;
+  --accent: #ffcc00;
+  --bg: #f5f7fb;
+  --card-bg: #ffffff;
+  --text: #222222;
+}
+
+:root[data-theme="dark"] {
+  --primary: #4c8dff;
+  --bg: #0f172a;
+  --card-bg: #111827;
+  --text: #e5e7eb;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  transition: 0.15s ease;
+}
+
+.card.correct { border: 3px solid #2ecc71; }
+.card.wrong { border: 3px solid #e74c3c; }
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+}

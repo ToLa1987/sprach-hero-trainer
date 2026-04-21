@@ -1,0 +1,9 @@
+{
+  "name": "Vokabelheld",
+  "short_name": "Vokabelheld",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0057ff",
+  "icons": []
+}
